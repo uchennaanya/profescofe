@@ -373,37 +373,49 @@ footer .courses-products {
 
 .testimonials .bg {
   position: absolute;
-  /* left: 36.46%; */
   right: 0%;
   top: 63.08%;
   bottom: 23.05%;
   height: 450px;
-  width: 70vw;
-  background: #FAFAFA;
+  width: 60vw;
 }
 
 .testimonials .img {
   position: absolute;
   width: 290px;
   height: 372px;
-  /* left: 619px; */
   right: 200px;
-  /* top: 3479px; */
-  /* background: url(./components/testimonial-bg.png); */
-  /* border-radius: 4px; */
 }
 
 .text-wrap {
   position: absolute;
   left: 17.13%;
   right: 51.98%;
-  /* top: 68.76%; */
-  /* bottom: 26.28%; */
   padding: 1rem;
   height: 200px;
   background: #FFFFFF;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
+  z-index: 1;
+  color: #6E7992;
+  font-family: Inter;
+  line-height: 23px;
+  font-size: 14px;
+}
+.text-wrap h3 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.testimonials .caption {
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 28px;
+  color: #6E7992;
   z-index: 1;
 }
 

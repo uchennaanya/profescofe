@@ -10,8 +10,8 @@ const Testimonials = () => {
                     <h2>
                         Students Reviews <br />
                         are essential
-                    </h2>
-                    <p>
+                        </h2>
+                    <p className="caption">
                         See what our students are saying
                     </p>
                 </div>
@@ -21,7 +21,7 @@ const Testimonials = () => {
                         Boost your career with full access to our learning programme.
                         Catch up with the syllabus all in one place
                     </p>
-                    <h4>Stella Mary</h4>
+                    <h3>Stella Mary</h3>
                     <p>
                         Accounting Student, Bricks University
                     </p>
