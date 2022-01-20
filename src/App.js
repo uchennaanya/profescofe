@@ -13,7 +13,7 @@ import Tutors from './components/Tutors';
 
 function App() {
   return (
-    <div className="App">
+    <div>
 
       <Header />
       <Hero />

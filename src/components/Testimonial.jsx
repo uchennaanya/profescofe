@@ -1,6 +1,6 @@
 import React from 'react'
-import testimonial1 from './testimonial1.png'
-import testimonial_bg from './testimonial-bg.png'
+import testimonial1 from '../components/img/testimonial1.png'
+import testimonial_bg from '../components/img/testimonial-bg.png'
 
 const Testimonials = () => {
     return (

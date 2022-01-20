@@ -1,16 +1,16 @@
 import React from 'react'
-import Rectangle4 from './Rectangle4.png'
-import all_access from './all_access.png'
-import Group19 from './Group19.png'
-import bell_fill from './Bell_fill.png'
+import Rectangle4 from '../components/img/Rectangle4.png'
+import all_access from '../components/img/all_access.png'
+import Group19 from '../components/img/Group19.png'
+import bell_fill from '../components/img/Bell_fill.png'
 
 
 const All_Access = () => {
     return (
         <div className="all-access">
-            <img src={Rectangle4} alt="Profesco image" className="rectangle" />
+            <img src={Rectangle4} alt="Profesco image" className="bg" />
             <img src={all_access} alt="Profesco" className="all-access-img" />
-            <img src={Group19} alt="profesco" className="group19" />
+            <img src={Group19} alt="profesco" className="dots" />
             <div className="text">
             <div style={{
                     background: '#E08213',
@@ -22,9 +22,18 @@ const All_Access = () => {
                     justifyContent: 'center',
                     padding: '0.5em'
                 }}>
-                    <img src={bell_fill} alt="profesco" style={{width: '15xp', height: '15px'}} />
+                    <img src={bell_fill} alt="profesco" style={{
+                        width: '15xp',
+                        height: '15px'
+                    }} />
                 </div>
-            <span style={{fontFamily: 'Inter', fontStyle: 'normal', fontWeight: '500', fontSize: '10px', color: '#6E7992'}}>
+                <span style={{
+                    fontFamily: 'Inter',
+                    fontStyle: 'normal',
+                    fontWeight: '500',
+                    fontSize: '10px',
+                    color: '#6E7992'
+                }}>
                     FAST LEARNING
                 </span>
                 <h2 className="title">
