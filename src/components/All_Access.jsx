@@ -8,9 +8,10 @@ import bell_fill from '../components/img/Bell_fill.png'
 const All_Access = () => {
     return (
         <div className="all-access">
-            <img src={bg} alt="Profesco image" className="bg" />
 
             <img src={all_access} alt="Profesco" className="all-access-img" />
+
+            <img src={bg} alt="Profesco image" className="bg" />
 
             <img src={dots} alt="profesco" className="dots" />
 

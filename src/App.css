@@ -15,6 +15,40 @@ body {
   box-sizing: border-box;
 }
 
+p {
+  color: #6e7992;
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.bell {
+  background: #E08213;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px red;
+  padding: 0.5em;
+}
+
+.bell img {
+  width: 1000px;
+  height: 15px;
+}
+
+.text {
+  position: relative;
+  color: #6E7992;
+  font-family: Inter;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 28px;
+  top: 40rem;
+}
+
 header {
   position: relative;
   z-index: 1;
@@ -89,6 +123,10 @@ nav .btn {
   background-color: #fff;
 }
 
+.hero .dots {
+  left: 15rem;
+}
+
 .hero-right {
   position: relative;
   right: 1rem;
@@ -98,8 +136,9 @@ nav .btn {
 
 .bg {
   position: absolute;
-  height: 25vh;
+  height: 45vh;
   right: 0;
+  z-index: -1;
   left: 0;
   width: 100vw;
   top: 0;
@@ -143,34 +182,32 @@ nav .btn {
 
 .all-access {
   position: relative;
-  top: 0;
+  top: 10rem;
   z-index: 1;
   height: 100vh;
 }
 
 .all-access .text {
-  position: absolute;
-  right: 6rem;
+  position: relative;
+  top: 5rem;
+
 }
 
 .all-access .title {
-  width: auto;
-  height: 44px;
-  left: 711px;
+  left: 0;
   font-size: 2rem;
-  /* margin: 60px 0; */
   line-height: 0;
   color: #152b5b;
 }
 
+.all-access .all-access-img {
+  width: 20rem;
+}
+
 .all-access p {
-  width: auto;
-  height: 84px;
   right: 6rem;
   font-family: Inter;
-  font-size: 18px;
-  line-height: 28px;
-  color: #6e7992;
+  font-size: 1rem;
 }
 
 .all-access li {
@@ -179,10 +216,21 @@ nav .btn {
 }
 
 .tutors {
-  top: 100px;
+  /* top: 0; */
   text-align: center;
   color: #152b5b;
+
 }
+
+.tutors .text {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  top: 1rem;
+
+}
+
+
 
 .tutors img {
   margin: 1rem 0;
@@ -194,17 +242,25 @@ nav .btn {
   display: flex;
   position: relative;
   justify-content: space-evenly;
+  top: 62rem;
   flex-wrap: wrap;
-  top: 850px;
   text-align: center;
-  margin: 0 auto;
+  width: 100vw;
   z-index: 1;
+}
+
+.rate .numbers {
+  left: 738px;
+  top: 4008px;
+  font:500 1.5rem Inter;
+  color: #152b5b;
 }
 
 .take-class {
   position: relative;
   height: 200px;
   width: 100vw;
+  padding: 2rem 0;
   top: 250px;
   text-align: center;
   background: #081b32;
@@ -212,11 +268,11 @@ nav .btn {
 }
 
 .take-class .text {
-  font-family: Inter;
-  font-weight: 100;
-  font-size: 24px;
-  line-height: 44px;
+  font: 200 1.5rem Inter;
+  line-height: 36px;
   padding: 1rem 0;
+  top: 0;
+  color: #f5f5f5;
   text-align: center;
   z-index: 1;
 }
@@ -227,9 +283,8 @@ nav .btn {
   color: #ffffff;
   font-family: Oxygen;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
 }
-
 
 footer {
   padding: 3rem 0 3rem 3rem;
