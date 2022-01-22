@@ -31,7 +31,6 @@ const Testimonials = () => {
                     <img src={testimonial1} alt="profesco" className="img" />
                 </div>
             </div>
-
         </>
     )
 }

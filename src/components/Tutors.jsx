@@ -5,7 +5,7 @@ import cima from '../components/img/cima.png'
 
 const Tutors = () => {
     return (
-        <div className="tutor">
+        <div className="tutors">
             <div className="text">
                 <h2>Our tutors</h2>
                 <div>
@@ -20,10 +20,10 @@ const Tutors = () => {
                     </p>
                 </div>
             </div>
-            <div className="tutor_img">
-                <div><img src={ican} alt="ican" className="img_wrap" /></div>
-                <div><img src={acca} alt="acca" className="img_wrap" /></div>
-                <div><img src={cima} alt="cima" className="img_wrap" /></div>
+            <div className="img-wrap">
+                <div><img src={ican} alt="ican" className="img" /></div>
+                <div><img src={acca} alt="acca" className="img" /></div>
+                <div><img src={cima} alt="cima" className="img" /></div>
             </div>
         </div>
     )

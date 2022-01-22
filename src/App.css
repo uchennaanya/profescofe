@@ -1,3 +1,15 @@
+/*
+Content
+
+header
+hero
+tutors
+all-access
+personal-tutor
+footer
+
+*/
+
 body {
   margin: 0%;
   box-sizing: border-box;
@@ -29,7 +41,7 @@ nav a {
 }
 
 nav ul > li {
-  display: block;
+  display: none;
   font-weight: 400;
   text-decoration: none;
   line-height: 19px;
@@ -100,23 +112,100 @@ nav .btn {
   z-index: 1;
 }
 
-.tutor {
+.bell {
+  background: #E08213;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+}
+
+.bell img {
+  width: 15xp;
+  height: 15px;
+}
+
+.sub {
+  font-family: Inter;
+  font-weight: 200;
+  font-size: 10px;
+  color: #6E7992;
+  color: red;
+}
+
+.more {
+    color: #E08213;
+    font-size: 14px;
+}
+
+.all-access {
+  position: relative;
+  top: 0;
+  z-index: 1;
+  height: 100vh;
+}
+
+.all-access .text {
+  position: absolute;
+  right: 6rem;
+}
+
+.all-access .title {
+  width: auto;
+  height: 44px;
+  left: 711px;
+  font-size: 2rem;
+  /* margin: 60px 0; */
+  line-height: 0;
+  color: #152b5b;
+}
+
+.all-access p {
+  width: auto;
+  height: 84px;
+  right: 6rem;
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 28px;
+  color: #6e7992;
+}
+
+.all-access li {
+  color: #6e7992;
+  list-style-image: -webkit-image-set();
+}
+
+.tutors {
   top: 100px;
   text-align: center;
   color: #152b5b;
 }
 
-.tutor_img img {
+.tutors img {
   margin: 1rem 0;
   border: 1px solid #000000;
   width: 100px;
+}
+
+.rate {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  top: 850px;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 1;
 }
 
 .take-class {
   position: relative;
   height: 200px;
   width: 100vw;
-  top: 0px;
+  top: 250px;
   text-align: center;
   background: #081b32;
   color: #fff;
@@ -146,7 +235,7 @@ footer {
   padding: 3rem 0 3rem 3rem;
   text-align: justify;
   position: relative;
-  top: 0px;
+  top: 300px;
   color: #6e7992;
   background: #fafafa;
 }
@@ -162,23 +251,38 @@ footer .courses-products {
 
 @media only screen and (min-width: 768px) {
 
+  /* Common style */
+
+  .title {
+    color: #152B5B;
+  }
+
+  p {
+    color: #6e7992;
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .text {
+    position: absolute;
+    color: #6E7992;
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 28px;
+    top: 5rem;
+    right: 12rem;
+    width: 30vw;
+  }
+
+  /* ------------------------------------------- */
+
   header {
     padding: 2em 6em 0.5rem 6em;
     flex-direction: row;
     display: flex;
     justify-content: space-between;
   }
-
-
-  /* header {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    padding: 0.5rem 2rem;
-    top: 0;
-    flex-direction: column;
-    justify-content: space-evenly;
-  } */
 
   .logo {
     height: 50px;
@@ -220,6 +324,12 @@ footer .courses-products {
     position: relative;
   }
 
+  .hero .dots {
+    left: 1200px;
+    top: 10rem;
+    border: none;
+  }
+
   .hero-left {
     z-index: 1;
     background-color: transparent;
@@ -233,18 +343,16 @@ footer .courses-products {
     margin-top: 0;
   }
 
-  .hero-title {
+  .hero .title {
     position: absolute;
     width: 481px;
     height: 165px;
     left: 6rem;
     top: 150px;
     font-family: Inter;
-    font-style: normal;
     font-weight: 500;
     font-size: 50px;
     line-height: 55px;
-    color: #152b5b;
   }
 
   .hero-text {
@@ -254,8 +362,6 @@ footer .courses-products {
     left: 6rem;
     top: 340px;
     font-family: Apercu;
-    font-style: normal;
-    font-weight: normal;
     font-size: 21px;
     line-height: 25px;
     color: #6e7992;
@@ -293,132 +399,93 @@ footer .courses-products {
 
   .dots {
     position: absolute;
-    left: 1200px;
-    top: 230px;
     z-index: 1;
+    width: 7rem;
+    height: 5rem;
   }
 
-  .tutor {
-    padding: 4rem;
-    position: relative;
-    top: 100px;
-    color: #152b5b;
-  }
-
-  .tutor p {
-    text-align: left;
-  }
-
-  .tutor h2 {
-    text-align: left;
-  }
-
-  .tutor .text {
+  .bell {
+    background: #E08213;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
     display: flex;
-    justify-content: space-around;
-    width: 50vw;
-    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
   }
 
-  .tutor img {
-    height: 50px;
+  .bell img {
+    width: 15xp;
+    height: 15px;
   }
 
-  .tutor_img {
-    display: flex;
-    margin: 0 auto;
-    width: 50vw;
-    justify-content: space-around;
-    margin-top: 50px;
-  }
-
-  .img_wrap {
-    border: 1px solid;
-    padding: 5px 25px;
-  }
-
-  .learn-pace {
-    position: relative;
-    top: 1350px;
-  }
-
-  .learn-pace .text {
-    position: absolute;
-    right: 6rem;
-  }
-
-  .learn-pace p {
-    width: 463px;
-    height: 84px;
-    right: 6rem;
+  .sub {
     font-family: Inter;
     font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
-    color: #6e7992;
+    font-weight: 500;
+    font-size: 10px;
+    color: #6E7992;
   }
 
-  .learn-pace li {
-    color: #6e7992;
-    list-style-type: style;
-  }
+  /* Tutors */
 
-  .learn-pace .bg {
-    position: absolute;
-    width: 466px;
-    height: 432px;
-    left: 103px;
-    background: #f7fcff;
-    border-radius: 6px;
-  }
-
-  .learn-pace .all-access-img {
-    position: absolute;
-    width: 423px;
-    height: 312px;
-    left: 226px;
-    border-radius: 4px;
-  }
-
-  .learn-pace .dots {
-    position: absolute;
-    left: 160px;
-    top: 263px;
-    z-index: 1;
-  }
-
-  .learn-pace .title {
-    width: 263px;
-    height: 44px;
-    left: 711px;
-    font-family: Inter;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 44px;
+  .tutors {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    top: 5rem;
     color: #152b5b;
   }
+
+  .tutors p {
+    text-align: left;
+  }
+
+  .tutors h2 {
+    text-align: left;
+  }
+
+  .tutors .text {
+    display: flex;
+    justify-content: space-around;
+    width: 65vw;
+  }
+
+  .tutors .img {
+    margin: 0 3rem 0 0;
+    width: 8vw;
+    padding: 0.5rem 1.5rem;
+    height: 8vh;
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    box-sizing: border-box;
+    border-radius: 9px;
+  }
+
+  .tutors .img-wrap {
+    position: relative;
+    top: 250px;
+    display: flex;
+    margin: 0 auto;
+
+  }
+
+  /* All access */
 
   .all-access {
     position: relative;
-    top: 200px;
+    top: 25rem;
   }
 
   .all-access .text {
-    position: absolute;
-    right: 6rem;
+    right: 11rem;
   }
 
   .all-access p {
-    width: 463px;
-    height: 84px;
+    width: 26rem;
     right: 6rem;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
-    color: #6e7992;
   }
 
   .all-access li {
@@ -433,6 +500,7 @@ footer .courses-products {
     left: 103px;
     background: #f7fcff;
     border-radius: 6px;
+    z-index: 0.4;
   }
 
   .all-access .all-access-img {
@@ -441,37 +509,56 @@ footer .courses-products {
     height: 312px;
     left: 226px;
     border-radius: 4px;
+    z-index: 1;
   }
 
   .all-access .dots {
-    position: absolute;
     left: 160px;
     top: 263px;
-    z-index: 1;
   }
 
   .all-access .title {
-    width: 263px;
-    height: 44px;
     left: 711px;
-    font-size: 36px;
-    line-height: 44px;
-    color: #152b5b;
   }
 
-  .personal_tutor {
+  .check-wrap {
+    display: block;
+  }
+  .check-wrap p {
+    display: inline;
+  }
+  .check {
+    font-size:1.5rem; color:green;
+    margin: 0.4rem 0 0 0 ;
+  }
+
+  /* Learning Pace */
+
+  .learn-pace {
     position: relative;
-    top: 800px;
+    top: 20rem;
   }
 
-  .personal_tutor .dots {
-    position: absolute;
-    left: 1000px;
-    top: 263px;
-    z-index: 1;
+  .learn-pace .text {
+    left: 6rem;
   }
 
-  .personal_tutor .bg {
+  .learn-pace p {
+    width: 463px;
+    height: 84px;
+    right: 6rem;
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 28px;
+
+  }
+
+  .learn-pace li {
+    color: #6e7992;
+    list-style-type: style;
+  }
+
+  .learn-pace .bg {
     position: absolute;
     width: 466px;
     height: 432px;
@@ -480,18 +567,7 @@ footer .courses-products {
     border-radius: 6px;
   }
 
-  .personal_tutor .text {
-    position: absolute;
-    left: 6rem;
-    width: 463px;
-    height: 84px;
-    font-family: Inter;
-    font-size: 18px;
-    line-height: 28px;
-    color: #6e7992;
-  }
-
-  .personal_tutor .all-access-img {
+  .learn-pace .all-access-img {
     position: absolute;
     width: 423px;
     height: 312px;
@@ -499,65 +575,58 @@ footer .courses-products {
     border-radius: 4px;
   }
 
-  .take-class {
-    position: relative;
-    height: 240px;
-    width: 80vw;
-    margin-left: 10vw;
-    top: 2300px;
-    text-align: center;
-    background: #081b32;
-    color: #fff;
-  }
-
-  .take-class .text {
-    font-family: Inter;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 44px;
-    padding: 2rem 0 1rem 0;
-    text-align: center;
-    color: #f5f5f5;
+  .learn-pace .dots {
+    position: absolute;
+    left: 1000px;
+    top: 263px;
     z-index: 1;
   }
 
-  .take-class .btn {
-    background: #24a3ff;
-    border-radius: 8px;
-    color: #ffffff;
-    font-family: Oxygen;
-    text-decoration: none;
-    padding: 1rem 2rem;
+  .learn-pace .title {
+    left: 711px;
   }
 
-  .rate {
-    display: flex;
+  /* Personal tutor */
+
+  .personal_tutor {
     position: relative;
-    justify-content: space-evenly;
-    top: 2450px;
-    width: 80vw;
-    margin: 0 auto;
-    z-index: 1;
+    top: 55rem;
   }
 
-  .rate .numbers {
-    width: 128px;
-    height: 36px;
-    left: 738px;
-    top: 4008px;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2.5rem;
-    line-height: 36px;
-    color: #152b5b;
+  .personal_tutor .dots {
+    left: 13rem;
+    top: 40vh;
   }
+
+  .personal_tutor .bg {
+    position: absolute;
+    width: 35vw;
+    height: 70vh;
+    top: 1rem;
+    left: 8rem;
+    background: #f7fcff;
+    border-radius: 6px;
+  }
+
+  .personal_tutor .personal-tutor-img {
+    position: absolute;
+    width: 25rem;
+    height: 18rem;
+    left: 15rem;
+    border-radius: 4px;
+  }
+
+  .personal_tutor .text {
+    line-height: 28px;
+  }
+
+  /* Testimonials */
 
   .testimonials {
     padding: 4rem;
     color: #081b32;
     position: relative;
-    top: 1600px;
+    top: 80rem;
   }
 
   .testimonials .bg {
@@ -608,15 +677,76 @@ footer .courses-products {
     z-index: 1;
   }
 
+  /* Rate */
+
+  .rate {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    top: 135rem;
+    width: 80vw;
+    margin: 0 auto;
+    z-index: 1;
+  }
+
+  .rate .numbers {
+    width: 128px;
+    height: 36px;
+    left: 738px;
+    top: 4008px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 36px;
+    color: #152b5b;
+  }
+
+  /* Take class */
+
+  .take-class {
+    position: relative;
+    height: 240px;
+    width: 80vw;
+    margin-left: 10vw;
+    top: 125rem;;
+    text-align: center;
+    background: #081b32;
+    color: #fff;
+  }
+
+  .take-class .text {
+    font: 400 2.5rem Inter;
+    line-height: 44px;
+    top: 0;
+    left: 20rem;
+    color: #f5f5f5;
+  }
+
+  .take-class .btn {
+    position: absolute;
+    top: 10rem;
+    left: 29rem;
+    background: #24a3ff;
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: Oxygen;
+    text-decoration: none;
+    padding: 1rem 2rem;
+  }
+
+  /* Footer */
+
   footer {
     padding: 3rem 0 3rem 0;
     position: relative;
-    top: 2400px;
+    top: 130rem;
     display: flex;
     justify-content: space-evenly;
     color: #6e7992;
     background: #fafafa;
   }
+
   footer .courses-products {
     position: absolute;
     width: 108px;
