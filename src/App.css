@@ -710,7 +710,7 @@ footer .courses-products {
     padding: 4rem;
     color: #081b32;
     position: relative;
-    top: 45rem;
+    top: 35rem;
   }
 
   .testimonials .review {
@@ -722,39 +722,49 @@ footer .courses-products {
     right: 0%;
     top: 63.08%;
     bottom: 23.05%;
-    height: 450px;
+    height: 32rem;
     width: 60vw;
+  }
+
+  .testimonial-left {
+    position: inherit;
+    top: 15rem;
   }
 
   .testimonials .img {
     position: absolute;
-    width: 290px;
-    height: 372px;
-    right: 200px;
+    width: 20vw;
+    height: 50vh;
+    right: 33rem;
+  }
+
+
+  .quot {
+    padding: 0;
+    text-align: left;
+    display: block ;
+    color: #6E7992;
+  }
+
+  .quot-img {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    top: 8rem;
+    right: 4rem;
+  }
+
+  .testimonials .review {
+    font: 600 1rem Inter;
+    padding-left: 5rem;
+    z-index: 1;
   }
 
   .text-wrap {
-    position: absolute;
-    left: 17.13%;
-    right: 51.98%;
-    padding: 1rem;
-    background: #ffffff;
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
-    border-radius: 4px;
-    z-index: 1;
-    color: #6e7992;
-    font-family: Inter;
-    line-height: 23px;
-    font-size: 14px;
-  }
-
-  .text-wrap h3 {
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
+    position: relative;
+    width: 30%;
+    padding: 2rem;
+    left: 6%;
   }
 
   .testimonials .caption {
@@ -771,7 +781,7 @@ footer .courses-products {
     display: flex;
     position: relative;
     justify-content: space-evenly;
-    top: 105rem;
+    top: 100rem;
     width: 80vw;
     margin: 0 auto;
     z-index: 1;
