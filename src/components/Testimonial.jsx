@@ -1,30 +1,32 @@
 import React from 'react'
 import testimonial1 from '../components/img/testimonial1.png'
 import testimonial_bg from '../components/img/testimonial-bg.png'
+import quot from '../components/img/quot.png'
 
 const Testimonials = () => {
     return (
         <>
             <div className="testimonials">
-                <div style={{paddingLeft: '10rem', zIndex: '1'}}>
+                <div className="review">
                     <h2>
                         Students Reviews <br />
                         are essential
-                        </h2>
+                    </h2>
                     <p className="caption">
                         See what our students are saying
                     </p>
                 </div>
 
                 <div className="text-wrap">
-                    <p>
+                    <cite className="quot">
                         Boost your career with full access to our learning programme.
                         Catch up with the syllabus all in one place
-                    </p>
-                    <h3>Stella Mary</h3>
-                    <p>
+                        <img src={quot} alt="Professco" className="quot-img" />
+                    </cite>
+                    <h3 className="quot">Stella Mary</h3>
+                    <small className="quot">
                         Accounting Student, Bricks University
-                    </p>
+                    </small>
                 </div>
                 <div>
                     <img src={testimonial_bg} alt="profesco" className="bg" />

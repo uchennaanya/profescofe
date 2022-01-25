@@ -1,16 +1,5 @@
-/*
-Content
-
-header
-hero
-tutors
-all-access
-personal-tutor
-footer
-
-*/
-
 body {
+  width: 100%;
   margin: 0%;
   box-sizing: border-box;
 }
@@ -23,20 +12,22 @@ p {
 }
 
 .bell {
+  position: relative;
   background: #E08213;
   width: 7px;
   height: 7px;
   border-radius: 50%;
   display: flex;
   align-items: center;
+  left: 12rem;
   justify-content: center;
-  border: 1px red;
   padding: 0.5em;
 }
 
 .bell img {
   width: 1000px;
   height: 15px;
+  color: blue;
 }
 
 .text {
@@ -46,7 +37,7 @@ p {
   font-size: 1rem;
   text-align: center;
   line-height: 28px;
-  top: 40rem;
+  margin: 10rem 0 1rem 0;
 }
 
 header {
@@ -147,24 +138,8 @@ nav .btn {
 .dots {
   position: relative;
   left: 100px;
-  top: 20px;
+  top: 0px;
   z-index: 1;
-}
-
-.bell {
-  background: #E08213;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5em;
-}
-
-.bell img {
-  width: 15xp;
-  height: 15px;
 }
 
 .sub {
@@ -180,16 +155,28 @@ nav .btn {
     font-size: 14px;
 }
 
+.check-wrap {
+  display: block;
+}
+.check-wrap p {
+  display: inline-block;
+  width: 10rem;
+}
+.check {
+  font-size:1.5rem; color:green;
+  margin: 0.4rem 0 0 0 ;
+}
+
 .all-access {
   position: relative;
-  top: 10rem;
+  top: 5rem;
   z-index: 1;
   height: 100vh;
 }
 
 .all-access .text {
   position: relative;
-  top: 5rem;
+  top: 0rem;
 
 }
 
@@ -204,6 +191,11 @@ nav .btn {
   width: 20rem;
 }
 
+.all-access .dots {
+  position: absolute;
+  left: 0;
+}
+
 .all-access p {
   right: 6rem;
   font-family: Inter;
@@ -216,26 +208,56 @@ nav .btn {
 }
 
 .tutors {
-  /* top: 0; */
+  position: relative;
+  padding: 1rem;
   text-align: center;
   color: #152b5b;
-
+  top: 2rem;
 }
 
 .tutors .text {
   display: flex;
   justify-content: space-around;
   text-align: left;
-  top: 1rem;
-
+  top: -10rem;
 }
-
-
 
 .tutors img {
   margin: 1rem 0;
   border: 1px solid #000000;
+  padding: 1rem;
+  height: 50px;
+  border-radius: 5px;
   width: 100px;
+}
+
+.learn-pace .all-access-img {
+  position: absolute;
+  width: 20rem;
+  height: 15rem;
+  right: 0;
+  border-radius: 4px;
+}
+
+.personal_tutor .dots {
+  position: absolute;
+  right: 10rem;
+  top: 180rem;
+}
+
+.personal_tutor .text {
+  position: relative;
+  line-height: 28px;
+  top: 6rem;
+}
+
+.personal_tutor .personal-tutor-img {
+  position: relative;
+  top: 4rem;
+  width: 20rem;
+  height: 15rem;
+  left: 0;
+  border-radius: 4px;
 }
 
 .rate {
@@ -258,10 +280,9 @@ nav .btn {
 
 .take-class {
   position: relative;
-  height: 200px;
   width: 100vw;
-  padding: 2rem 0;
-  top: 250px;
+  padding: 0.5rem 0 0 0;
+  top: 20rem;
   text-align: center;
   background: #081b32;
   color: #fff;
@@ -269,21 +290,55 @@ nav .btn {
 
 .take-class .text {
   font: 200 1.5rem Inter;
-  line-height: 36px;
-  padding: 1rem 0;
-  top: 0;
+  padding: 0;
+  top: -9rem;
   color: #f5f5f5;
   text-align: center;
   z-index: 1;
 }
 
 .take-class .btn {
+  position: absolute;
   background: #24a3ff;
   border-radius: 8px;
   color: #ffffff;
   font-family: Oxygen;
-  text-decoration: none;
+  top: 8rem;
+  left: 10rem;
   padding: 0.5rem 1.5rem;
+}
+
+.quot {
+  padding: 1rem;
+  text-align: left;
+  display: inline-block ;
+  color: #6E7992;
+}
+
+.quot-img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.testimonials .review {
+  font: 600 1rem Inter;
+  padding-left: 1rem;
+  z-index: 1;
+}
+
+.text-wrap {
+  position: relative;
+  width: 100vw;
+  left: 0%;
+  right: 0%;
+  padding: 0 1rem;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  z-index: 1;
+  color: #6e7992;
+  font-family: Inter;
+  font-size: 14px;
 }
 
 footer {
@@ -321,16 +376,11 @@ footer .courses-products {
 
   .text {
     position: absolute;
-    color: #6E7992;
-    font-family: Inter;
-    font-size: 18px;
-    line-height: 28px;
-    top: 5rem;
-    right: 12rem;
+    text-align: left;
     width: 30vw;
   }
 
-  /* ------------------------------------------- */
+  /* End */
 
   header {
     padding: 2em 6em 0.5rem 6em;
@@ -461,13 +511,9 @@ footer .courses-products {
 
   .bell {
     background: #E08213;
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5em;
+    align-items: left;
+    left: 0rem;
   }
 
   .bell img {
@@ -489,7 +535,7 @@ footer .courses-products {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 4rem;
+    padding: 0rem;
     top: 5rem;
     color: #152b5b;
   }
@@ -524,7 +570,6 @@ footer .courses-products {
     top: 250px;
     display: flex;
     margin: 0 auto;
-
   }
 
   /* All access */
@@ -535,7 +580,7 @@ footer .courses-products {
   }
 
   .all-access .text {
-    right: 11rem;
+    left: 50rem;
   }
 
   .all-access p {
@@ -591,26 +636,12 @@ footer .courses-products {
 
   .learn-pace {
     position: relative;
-    top: 20rem;
+    top: -10rem;
   }
 
   .learn-pace .text {
     left: 6rem;
-  }
-
-  .learn-pace p {
-    width: 463px;
-    height: 84px;
-    right: 6rem;
-    font-family: Inter;
-    font-size: 18px;
-    line-height: 28px;
-
-  }
-
-  .learn-pace li {
-    color: #6e7992;
-    list-style-type: style;
+    top: -5rem;
   }
 
   .learn-pace .bg {
@@ -637,15 +668,11 @@ footer .courses-products {
     z-index: 1;
   }
 
-  .learn-pace .title {
-    left: 711px;
-  }
-
   /* Personal tutor */
 
   .personal_tutor {
     position: relative;
-    top: 55rem;
+    top: 40rem;
   }
 
   .personal_tutor .dots {
@@ -673,6 +700,8 @@ footer .courses-products {
 
   .personal_tutor .text {
     line-height: 28px;
+    top: 10rem;
+    left: 45rem;
   }
 
   /* Testimonials */
@@ -681,7 +710,11 @@ footer .courses-products {
     padding: 4rem;
     color: #081b32;
     position: relative;
-    top: 80rem;
+    top: 45rem;
+  }
+
+  .testimonials .review {
+    padding-left: 10rem;
   }
 
   .testimonials .bg {
@@ -705,7 +738,6 @@ footer .courses-products {
     left: 17.13%;
     right: 51.98%;
     padding: 1rem;
-    height: 200px;
     background: #ffffff;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
     border-radius: 4px;
@@ -715,6 +747,7 @@ footer .courses-products {
     line-height: 23px;
     font-size: 14px;
   }
+
   .text-wrap h3 {
     font-family: Inter;
     font-style: normal;
@@ -738,7 +771,7 @@ footer .courses-products {
     display: flex;
     position: relative;
     justify-content: space-evenly;
-    top: 135rem;
+    top: 105rem;
     width: 80vw;
     margin: 0 auto;
     z-index: 1;
@@ -750,7 +783,6 @@ footer .courses-products {
     left: 738px;
     top: 4008px;
     font-family: Inter;
-    font-style: normal;
     font-weight: 500;
     font-size: 2.5rem;
     line-height: 36px;
@@ -760,34 +792,24 @@ footer .courses-products {
   /* Take class */
 
   .take-class {
-    position: relative;
-    height: 240px;
+    position: absolute;
     width: 80vw;
-    margin-left: 10vw;
-    top: 125rem;;
-    text-align: center;
-    background: #081b32;
-    color: #fff;
+    padding: 5rem 0;
+    top: 240rem;
+    left: 10rem;
   }
 
   .take-class .text {
-    font: 400 2.5rem Inter;
-    line-height: 44px;
-    top: 0;
+    font: 200 1.5rem Inter;
     left: 20rem;
-    color: #f5f5f5;
+    padding: 0;
+    z-index: 1;
   }
 
   .take-class .btn {
-    position: absolute;
-    top: 10rem;
+    top: 6rem;
     left: 29rem;
-    background: #24a3ff;
-    border-radius: 8px;
-    color: #ffffff;
-    font-family: Oxygen;
-    text-decoration: none;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1.5rem;
   }
 
   /* Footer */
@@ -795,7 +817,7 @@ footer .courses-products {
   footer {
     padding: 3rem 0 3rem 0;
     position: relative;
-    top: 130rem;
+    top: 100rem;
     display: flex;
     justify-content: space-evenly;
     color: #6e7992;
